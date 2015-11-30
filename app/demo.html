@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+</head>
+<body>
+	
+</body>
+<script src="src/require.js"></script>
+<script>
+	require.config({
+        baseUrl: './src',
+        paths: {
+        	'jquery':'jquery1.9.1'
+        }           
+    });
+	require(['tip-box'], function(tipBox) {
+		tipBox.init();
+	});
+</script>
+</html>
